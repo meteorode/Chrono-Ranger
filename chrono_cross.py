@@ -22,7 +22,7 @@ from collections import Counter
 # Define Colors here.
 COLOR_RED = 0
 
-def card: # Cards are heroes, events, locations, treasures, etc. Cards have color used for match-3.
+class card: # Cards are heroes, events, locations, treasures, etc. Cards have color used for match-3.
     def __init__(self, name, id):
         self.name = name
         self.id = id
