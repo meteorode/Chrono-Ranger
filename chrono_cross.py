@@ -19,6 +19,15 @@ from random import *
 from pathlib import Path
 from collections import Counter
 
+# Define Colors here.
+COLOR_RED = 0
+
+def card: # Cards are heroes, events, locations, treasures, etc. Cards have color used for match-3.
+    def __init__(self, name, id):
+        self.name = name
+        self.id = id
+        self.color = COLOR_RED
+
 def main(): # Main loop about what a player can do in this game.
     pass
 
