@@ -1,6 +1,8 @@
 # chrono_cross.py
 
 # Themes:
+#   1.  A game about history and predestination.
+#   2.  Leading/witnessing humanity to different destinies by triggering/changing history events.
 
 # Features:
 
