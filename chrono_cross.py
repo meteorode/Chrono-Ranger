@@ -54,7 +54,7 @@ class deck: # Deck is an array of [Cards], will implement some features like dra
         pass    # _TO_BE_CONTINUED_
 
 def main(): # Main loop about what a player can do in this game.
-    pass
+    pass    # _TO_BE_CONTINUED_
 
 if __name__ == "__main__":
     main()
