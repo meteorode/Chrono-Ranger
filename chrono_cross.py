@@ -27,6 +27,9 @@ COLOR_YELLOW = 3
 COLOR_WHITE = 4
 COLOR_BLACK = 5
 
+# Define Choronauts' class here.
+CLASS_CIVILIAN = 0
+
 class card: # Cards are heroes, events, locations, treasures, etc. Cards have color used for match-3.
     def __init__(self, name, id):
         self.name = name
@@ -53,8 +56,13 @@ class deck: # Deck is an array of [Cards], will implement some features like dra
     def trash_card(self, card): # temporarily remove a card from battle.
         pass    # _TO_BE_CONTINUED_
 
+class choronaut: # A choronaut is a chrono ranger who plays cards to explore histories.
+    def __init__(self, name):
+        self.name = name
+        self.occupation = CLASS_CIVILIAN
+
 def main(): # Main loop about what a player can do in this game.
-    pass    # _TO_BE_CONTINUED_
+    c = choronaut("John Smith") # Init a new player.
 
 if __name__ == "__main__":
     main()
