@@ -30,6 +30,15 @@ COLOR_BLACK = 5
 # Define Choronauts' class here.
 CLASS_CIVILIAN = 0
 
+# Define history ages here.
+STONE_AGE = 0 # (? - c.3000 BCE)
+BRONZE_AGE = 1 # (c.3000 BCE – c.1050 BCE)
+IRON_AGE = 2 # (c.1050 BCE - c.500 BCE)
+MIDDLE_AGE = 3 
+RENAISSANCE = 4
+MACHINE_AGE = 5
+ATOMIC_AGE = 6
+
 class card: # Cards are heroes, events, locations, treasures, etc. Cards have color used for match-3.
     def __init__(self, name, id):
         self.name = name
@@ -61,8 +70,13 @@ class choronaut: # A choronaut is a chrono ranger who plays cards to explore his
         self.name = name
         self.occupation = CLASS_CIVILIAN
 
+class history: # 
+    def __init__(self, age = STONE_AGE, seed = 0): # A new possible history starts from [age] and randomize with [seed]
+        pass    # _TO_BE_CONTINUED_
+
 def main(): # Main loop about what a player can do in this game.
     c = choronaut("John Smith") # Init a new player.
+    h = history()   # Legend has ended, while history begins.
 
 if __name__ == "__main__":
     main()
