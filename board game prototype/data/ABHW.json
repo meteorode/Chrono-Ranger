@@ -1,7 +1,7 @@
 [
     {
-        "name": "",
-        "image name": "",
+        "name": "古埃及人发现索特周期",
+        "image name": "Egyptian-Sothic-cycle.png",
         "type": "",
         "play cost":
         [
@@ -15,10 +15,7 @@
         [
 
         ],
-        "description":
-        [
-
-        ],
+        "description": "「上面的天空与下面的地便形成了」",
         "script name": ""
     }
 ]
