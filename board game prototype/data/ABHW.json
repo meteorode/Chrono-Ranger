@@ -132,4 +132,42 @@
         "description": "「将来，有人会如此说告，而我的荣誉将与世长存」",
         "script name": ""
     },
+    {
+        "name": "第一届奥林匹克运动会举行",
+        "image name": "1st-Olympic.png",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "「奥林匹斯山，奥林匹亚河」",
+        "script name": ""
+    },
+    {
+        "name": "空中花园和巴别塔的建造",
+        "image name": "Hanging-Gardens-and-Babel.png",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "「因为耶和华在那里变乱天下人的言语、使众人分散在全地上、所以那城名叫巴别」",
+        "script name": ""
+    },
 ]
