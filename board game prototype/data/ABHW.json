@@ -17,5 +17,119 @@
         ],
         "description": "「上面的天空与下面的地便形成了」",
         "script name": ""
-    }
+    },
+    {
+        "name": "楔形文字出现",
+        "image name": "Cuneiform.png",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "「用楔形文字写下了永远」",
+        "script name": ""
+    },
+    {
+        "name": "玛雅历法创立",
+        "image name": "Tzolkin.png",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "「马特拉克堤利，毁于洪水」",
+        "script name": ""
+    },
+    {
+        "name": "克里特文明出现",
+        "image name": "Minoan-civilization.png",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "「米诺斯早期的战争是个人化或者仪式化的」",
+        "script name": ""
+    },
+    {
+        "name": "金字塔与狮身人面像建成",
+        "image name": "Pyramid-Sphinx.png",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "「什么动物早晨用四条腿走路，中午用两条腿走路，晚上用三条腿走路？」",
+        "script name": ""
+    },
+    {
+        "name": "汉谟拉比法典制订",
+        "image name": "Code-of-Hammurabi.png",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "「古巴比伦王颁布了汉谟拉比法典」",
+        "script name": ""
+    },
+    {
+        "name": "特洛伊战争",
+        "image name": "Trojan-War.png",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "「将来，有人会如此说告，而我的荣誉将与世长存」",
+        "script name": ""
+    },
 ]
