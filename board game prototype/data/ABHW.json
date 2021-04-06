@@ -170,4 +170,80 @@
         "description": "「因为耶和华在那里变乱天下人的言语、使众人分散在全地上、所以那城名叫巴别」",
         "script name": ""
     },
+    {
+        "name": "毕达哥拉斯定理的发现",
+        "image name": "Pythagorean-theorem.png",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "勾三，股四，弦五",
+        "script name": ""
+    },
+    {
+        "name": "释迦摩尼诞生",
+        "image name": "Gautama-Buddha.png",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "「阿赖耶识」",
+        "script name": ""
+    },
+    {
+        "name": "孔子诞生",
+        "image name": "Confucius.png",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "「道不行，乘桴浮于海」",
+        "script name": ""
+    },  
+    {
+        "name": "伯罗奔尼撒战争",
+        "image name": "Peloponnesian-War.png",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "这场战争深刻地影响了希腊和一部分野蛮人，可以说这场战争影响了整个人类社会",
+        "script name": ""
+    },  
 ]
