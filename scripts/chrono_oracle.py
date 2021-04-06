@@ -9,25 +9,12 @@ import torch
 import pickle
 import zipfile
 import os
-from tqdm.autonotebook import tqdm
 
 # Here we load the multilingual CLIP model. Note, this model can only encode text.
 # If you need embeddings for images, you must load the 'clip-ViT-B-32' model
-model = SentenceTransformer('clip-ViT-B-32-multilingual-v1')
+model = SentenceTransformer('./models/clip-ViT-B-32-multilingual-v1')
 
-# Next, we get about 25k images from Unsplash 
-img_folder = 'photos/'
-if not os.path.exists(img_folder) or len(os.listdir(img_folder)) == 0:
-    os.makedirs(img_folder, exist_ok=True)
-    
-    photo_filename = 'chrono_ranger.zip'
-    if not os.path.exists(photo_filename):   # Download dataset if does not exist
-        util.http_get('http://sbert.net/datasets/'+photo_filename, photo_filename)
-        
-    #Extract all images
-    with zipfile.ZipFile(photo_filename, 'r') as zf:
-        for member in tqdm(zf.infolist(), desc='Extracting'):
-            zf.extract(member, img_folder)
+img_folder = './photos/'
 
 # Now, we need to compute the embeddings
 # To speed things up, we destribute pre-computed embeddings
@@ -48,9 +35,9 @@ if use_precomputed_embeddings:
     print("Images:", len(img_names))
 else:
     # For embedding images, we need the non-multilingual CLIP model
-    img_model = SentenceTransformer('clip-ViT-B-32')
+    img_model = SentenceTransformer('./models/clip-ViT-B-32')
 
-    img_names = list(glob.glob('/photos/*.jpg'))
+    img_names = list(glob.glob('./photos/*.png'))
     print("Images:", len(img_names))
     img_emb = img_model.encode([Image.open(filepath) for filepath in img_names], batch_size=128, convert_to_tensor=True, show_progress_bar=True)
 
