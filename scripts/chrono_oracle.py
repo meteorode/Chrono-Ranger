@@ -9,6 +9,7 @@ import torch
 import pickle
 import zipfile
 import os
+from tqdm.autonotebook import tqdm
 
 # Here we load the multilingual CLIP model. Note, this model can only encode text.
 # If you need embeddings for images, you must load the 'clip-ViT-B-32' model
@@ -19,8 +20,8 @@ img_folder = 'photos/'
 if not os.path.exists(img_folder) or len(os.listdir(img_folder)) == 0:
     os.makedirs(img_folder, exist_ok=True)
     
-    photo_filename = 'unsplash-25k-photos.zip'
-    if not os.path.exists(photo_filename):   #Download dataset if does not exist
+    photo_filename = 'chrono_ranger.zip'
+    if not os.path.exists(photo_filename):   # Download dataset if does not exist
         util.http_get('http://sbert.net/datasets/'+photo_filename, photo_filename)
         
     #Extract all images
@@ -35,21 +36,21 @@ if not os.path.exists(img_folder) or len(os.listdir(img_folder)) == 0:
 # from PIL import Image
 # img_emb = model.encode(Image.open(filepath))
 
-use_precomputed_embeddings = True
+use_precomputed_embeddings = False
 
 if use_precomputed_embeddings: 
     emb_filename = 'unsplash-25k-photos-embeddings.pkl'
-    if not os.path.exists(emb_filename):   #Download dataset if does not exist
+    if not os.path.exists(emb_filename):   # Download dataset if does not exist
         util.http_get('http://sbert.net/datasets/'+emb_filename, emb_filename)
         
     with open(emb_filename, 'rb') as fIn:
         img_names, img_emb = pickle.load(fIn)  
     print("Images:", len(img_names))
 else:
-    #For embedding images, we need the non-multilingual CLIP model
+    # For embedding images, we need the non-multilingual CLIP model
     img_model = SentenceTransformer('clip-ViT-B-32')
 
-    img_names = list(glob.glob('unsplash/photos/*.jpg'))
+    img_names = list(glob.glob('/photos/*.jpg'))
     print("Images:", len(img_names))
     img_emb = img_model.encode([Image.open(filepath) for filepath in img_names], batch_size=128, convert_to_tensor=True, show_progress_bar=True)
 
@@ -66,3 +67,5 @@ def search(query, k=3):
     print("Query:")
     for hit in hits:
         print(img_names[hit['corpus_id']])
+
+search("Alice in Wonderland")
