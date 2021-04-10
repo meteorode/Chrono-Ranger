@@ -246,4 +246,80 @@
         "description": "这场战争深刻地影响了希腊和一部分野蛮人，可以说这场战争影响了整个人类社会",
         "script name": ""
     },  
+    {
+        "name": "苏格拉底被处死",
+        "image name": "",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "「克里托，我还欠阿斯克勒庇俄斯一只公鸡，你会记住把这债还了吗？」",
+        "script name": ""
+    }, 
+    {
+        "name": "亚里士多德诞生",
+        "image name": "",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "在物理学之后",
+        "script name": ""
+    },     
+    {
+        "name": "亚历山大东征",
+        "image name": "",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "「难道父亲没有留下一点儿的土地给我征服？」",
+        "script name": ""
+    },  
+    {
+        "name": "几何原本问世",
+        "image name": "",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "同平面内一条直线和另外两条直线相交，若在直线同侧的两个内角之和小于180°，则这两条直线经无限延长后在这一侧一定相交",
+        "script name": ""
+    }, 
 ]
