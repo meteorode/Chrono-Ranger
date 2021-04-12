@@ -322,4 +322,23 @@
         "description": "同平面内一条直线和另外两条直线相交，若在直线同侧的两个内角之和小于180°，则这两条直线经无限延长后在这一侧一定相交",
         "script name": ""
     }, 
+    {
+        "name": "阿基米德诞生",
+        "image name": "",
+        "type": "",
+        "play cost":
+        [
+
+        ],
+        "instant effect": 
+        [
+
+        ],
+        "onboard effect":
+        [
+
+        ],
+        "description": "给我一个支点，我就能撬动地球",
+        "script name": ""
+    },     
 ]
